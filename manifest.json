@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Studio Title to Tag",
+  "version": "1.0",
+  "description": "کپی کردن متن عنوان به بخش تگ‌ها در یوتیوب استودیو",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://studio.youtube.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
